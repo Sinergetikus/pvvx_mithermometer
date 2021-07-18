@@ -104,9 +104,9 @@ bool PVVXMiThermometer::parse_message(const std::vector<uint8_t> &message, Parse
   }
 
   const  data_t *pvvx_data = reinterpret_cast<const data_t*>(data);
-  result.temperature = pvvx_data->temperature / 100.0f;
+  result.temperature = pvvx_data->temperature / 100.00f;
 
-  result.humidity = pvvx_data->humidity / 100.0f;
+  result.humidity = pvvx_data->humidity / 100.00f;
 
   result.battery_level = pvvx_data->battery_level;
 
