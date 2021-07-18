@@ -33,10 +33,10 @@ CONFIG_SCHEMA = (
             cv.GenerateID(): cv.declare_id(PVVXMiThermometer),
             cv.Required(CONF_MAC_ADDRESS): cv.mac_address,
             cv.Optional(CONF_TEMPERATURE): sensor.sensor_schema(
-                UNIT_CELSIUS, ICON_EMPTY, 1, DEVICE_CLASS_TEMPERATURE
+                UNIT_CELSIUS, ICON_EMPTY, 2, DEVICE_CLASS_TEMPERATURE
             ),
             cv.Optional(CONF_HUMIDITY): sensor.sensor_schema(
-                UNIT_PERCENT, ICON_EMPTY, 1, DEVICE_CLASS_HUMIDITY
+                UNIT_PERCENT, ICON_EMPTY, 2, DEVICE_CLASS_HUMIDITY
             ),
             cv.Optional(CONF_BATTERY_LEVEL): sensor.sensor_schema(
                 UNIT_PERCENT, ICON_EMPTY, 0, DEVICE_CLASS_BATTERY
